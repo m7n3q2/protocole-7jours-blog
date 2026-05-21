@@ -27,8 +27,8 @@ export default function Footer() {
             </span>
           </Link>
           <p className="mt-4 text-sm leading-relaxed max-w-md text-ink-400">
-            Journal independant sur la traversee de la rupture, le no contact et la reconquete amoureuse.
-            Contenu educatif : ne remplace pas un suivi psychologique ou medical.
+            Journal indépendant sur la traversée de la rupture, le no contact et la reconquête amoureuse.
+            Contenu éducatif : ne remplace pas un suivi psychologique ou médical.
           </p>
           <p className="mt-4 text-sm">
             <a
@@ -73,10 +73,10 @@ export default function Footer() {
         <div className="container-wide py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 md:gap-3">
           <p className="font-sans text-[10px] sm:text-[11px] uppercase tracking-wider text-ink-500 leading-relaxed">
             &copy; {new Date().getFullYear()} LE PROTOCOLE · JOURNAL
-            <span className="hidden sm:inline"> · Contenu educatif</span>
+            <span className="hidden sm:inline"> · Contenu éducatif</span>
           </p>
           <p className="hidden md:block font-sans text-[11px] uppercase tracking-wider text-ink-500">
-            Indépendant · Ethique · Soutien apres rupture
+            Indépendant · Éthique · Soutien après rupture
           </p>
         </div>
       </div>

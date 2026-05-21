@@ -30,14 +30,14 @@ export default function HomePage() {
 
         <div className="container-wide relative py-16 md:py-24">
           <div className="max-w-3xl">
-            <p className="label-silo">Journal independant</p>
+            <p className="label-silo">Journal indépendant</p>
             <h1 className="mt-4 font-sans text-5xl md:text-6xl lg:text-7xl font-bold text-ink-950 leading-[1.02] tracking-[-0.025em]">
               Traverser la rupture.{' '}
               <span className="italic text-accent-500">Comprendre. Avancer.</span>
             </h1>
             <p className="mt-6 text-xl text-ink-700 leading-relaxed max-w-2xl">
-              Articles concrets sur la rupture amoureuse, le no contact, la reconquete et la reconstruction de soi.
-              Pour les moments ou on ne sait plus quoi faire.
+              Articles concrets sur la rupture amoureuse, le no contact, la reconquête et la reconstruction de soi.
+              Pour les moments où on ne sait plus quoi faire.
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-ink-500">
               <span className="inline-flex items-center gap-1.5">
@@ -45,7 +45,7 @@ export default function HomePage() {
                 {total > 0 ? `${total} articles` : 'Journal en cours'}
               </span>
               <span>·</span>
-              <span>6 themes</span>
+              <span>6 thèmes</span>
               <span>·</span>
               <span>Nouveau contenu chaque semaine</span>
             </div>
@@ -178,11 +178,11 @@ export default function HomePage() {
         <div className="container-wide relative py-24 md:py-32 text-center max-w-3xl mx-auto">
           <p className="font-sans text-[11px] uppercase tracking-[0.18em] text-accent-400 mb-3">Pour aller plus loin</p>
           <h2 className="font-sans text-3xl md:text-4xl font-bold leading-tight">
-            Les 7 premiers jours apres une rupture sont critiques.
+            Les 7 premiers jours après une rupture sont critiques.
           </h2>
           <p className="mt-4 text-ink-300 max-w-xl mx-auto leading-relaxed">
-            Le Protocole des 7 Jours est un programme complet pour se stabiliser emoionnellement
-            et reprendre le controle dans la semaine qui suit la separation.
+            Le Protocole des 7 Jours est un programme complet pour se stabiliser émotionnellement
+            et reprendre le contrôle dans la semaine qui suit la séparation.
           </p>
           <div className="mt-8">
             <a

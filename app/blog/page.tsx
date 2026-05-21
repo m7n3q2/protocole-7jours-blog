@@ -8,7 +8,7 @@ import { buildMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Tous les articles',
-  description: "L'archive complete : rupture, no contact, reconquete, comprendre son ex, se reconstruire. 6 themes, mise a jour continue.",
+  description: "L'archive complète : rupture, no contact, reconquête, comprendre son ex, se reconstruire. 6 thèmes, mise à jour continue.",
   path: '/blog',
 });
 
@@ -36,7 +36,7 @@ export default function BlogIndexPage() {
           <span className="italic font-normal text-accent-700">par ordre de publication.</span>
         </h1>
         <p className="mt-4 text-lg text-ink-700 leading-relaxed max-w-2xl">
-          {total} articles, 6 themes, mise a jour continue. Filtre par theme ou navigue dans l&apos;ordre chronologique.
+          {total} articles, 6 thèmes, mise à jour continue. Filtre par thème ou navigue dans l&apos;ordre chronologique.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-2">
@@ -107,14 +107,14 @@ export default function BlogIndexPage() {
         <div className="container-wide relative py-24 md:py-32 text-center max-w-3xl mx-auto">
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-400 mb-5">Pour aller plus loin</p>
           <h2 className="font-sans text-3xl md:text-4xl font-bold leading-tight">
-            Besoin d&apos;un accompagnement structure ?
+            Besoin d&apos;un accompagnement structuré ?
           </h2>
           <p className="mt-5 text-ink-300 max-w-xl mx-auto leading-relaxed">
-            Le Protocole des 7 Jours est un programme complet pour traverser la premiere semaine apres une rupture.
+            Le Protocole des 7 Jours est un programme complet pour traverser la première semaine après une rupture.
           </p>
           <div className="mt-10">
             <a href="https://leprotocoledesseptjours.com" target="_blank" rel="noopener noreferrer" className="btn-primary group inline-flex">
-              Decouvrir le protocole
+              Découvrir le protocole
               <span className="font-sans italic text-lg leading-none transition-transform group-hover:translate-x-0.5">→</span>
             </a>
           </div>

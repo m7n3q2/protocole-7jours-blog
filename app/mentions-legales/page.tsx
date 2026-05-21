@@ -10,7 +10,7 @@ export const metadata: Metadata = buildMetadata({
 
 /**
  * Le Protocole · Journal — app/mentions-legales/page.tsx
- * Page legale : aucune info perso, email impersonnel, caveat YMYL.
+ * Page légale : aucune info perso, email impersonnel, caveat YMYL.
  */
 
 export default function LegalNoticePage() {
@@ -42,29 +42,29 @@ export default function LegalNoticePage() {
 
       <div className="mt-10 max-w-[72ch] text-lg text-ink-700 leading-relaxed space-y-4">
         <LegalH2 id="editeur">Éditeur du site</LegalH2>
-        <p>Le site <strong className="text-ink-900">blog.leprotocoledesseptjours.com</strong> est edite par une entite editoriale independante. Conformement a l&apos;article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l&apos;economie numerique, le site est publie de maniere professionnelle.</p>
+        <p>Le site <strong className="text-ink-900">blog.leprotocoledesseptjours.com</strong> est édité par une entité éditoriale indépendante. Conformément à l&apos;article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l&apos;économie numérique, le site est publié de manière professionnelle.</p>
         <p>Directeur de la publication : la redaction.</p>
         <p>Le site n&apos;est rattache a aucune agence, aucun editeur tiers ni partenariat commercial obligatoire.</p>
         <p>Pour nous contacter : <Link href="/contact" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">formulaire de contact</Link> ou contact@leprotocoledesseptjours.com.</p>
 
         <LegalH2 id="hebergement">Hébergement</LegalH2>
-        <p>Le site est heberge sur Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, Etats-Unis. Infrastructure CDN Europe.</p>
-        <p>Les donnees utilisateurs (formulaires de contact) sont stockees dans Notion (Notion Labs, Inc.), conformement aux clauses contractuelles types signees et a la politique de confidentialite du present site.</p>
+        <p>Le site est hébergé sur Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis. Infrastructure CDN Europe.</p>
+        <p>Les données utilisateurs (formulaires de contact) sont stockées dans Notion (Notion Labs, Inc.), conformément aux clauses contractuelles types signées et à la politique de confidentialité du présent site.</p>
 
         <LegalH2 id="propriete">Propriété intellectuelle</LegalH2>
-        <p>L&apos;ensemble des contenus presents sur le site (textes, analyses, mise en page) est protege par le droit d&apos;auteur. Toute reproduction, representation, modification, publication ou adaptation, totale ou partielle, sans autorisation ecrite prealable, est interdite.</p>
-        <p>Les citations courtes accompagnees de l&apos;attribution claire de la source et du lien vers l&apos;article original sont autorisees dans la limite de l&apos;article L.122-5 du Code de la propriete intellectuelle.</p>
+        <p>L&apos;ensemble des contenus présents sur le site (textes, analyses, mise en page) est protégé par le droit d&apos;auteur. Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, sans autorisation écrite préalable, est interdite.</p>
+        <p>Les citations courtes accompagnées de l&apos;attribution claire de la source et du lien vers l&apos;article original sont autorisées dans la limite de l&apos;article L.122-5 du Code de la propriété intellectuelle.</p>
 
         <LegalH2 id="responsabilite">Responsabilité éditoriale</LegalH2>
-        <p>Les contenus publies sur ce site sont des analyses editoriales a but informatif sur les sujets de la rupture amoureuse, du no contact et de la reconquete. Ils ne constituent pas un conseil psychologique, psychiatrique ou medical reglemente. Ce contenu est educatif et ne remplace pas un suivi professionnel. Pour tout probleme de sante mentale, consulte un professionnel de sante qualifie.</p>
-        <p>Les methodes et exemples cites refletent l&apos;etat des recherches et pratiques a la date de publication. Toute decision reste sous la responsabilite du lecteur.</p>
+        <p>Les contenus publiés sur ce site sont des analyses éditoriales à but informatif sur les sujets de la rupture amoureuse, du no contact et de la reconquête. Ils ne constituent pas un conseil psychologique, psychiatrique ou médical réglementé. Ce contenu est éducatif et ne remplace pas un suivi professionnel. Pour tout problème de santé mentale, consulte un professionnel de santé qualifié.</p>
+        <p>Les méthodes et exemples cités reflètent l&apos;état des recherches et pratiques à la date de publication. Toute décision reste sous la responsabilité du lecteur.</p>
 
         <LegalH2 id="liens">Liens externes et affiliation</LegalH2>
-        <p>Le site contient un lien commercial vers le produit <a href="https://leprotocoledesseptjours.com" target="_blank" rel="noopener noreferrer" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">Le Protocole des 7 Jours</a>. Ce lien est clairement identifie dans le site. Il peut egalement contenir des liens vers des ressources tierces fournis a titre informatif.</p>
-        <p>Aucune affiliation cachee n&apos;existe sur le site. Tous les liens commerciaux sont identifies.</p>
+        <p>Le site contient un lien commercial vers le produit <a href="https://leprotocoledesseptjours.com" target="_blank" rel="noopener noreferrer" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">Le Protocole des 7 Jours</a>. Ce lien est clairement identifié dans le site. Il peut également contenir des liens vers des ressources tierces fournis à titre informatif.</p>
+        <p>Aucune affiliation cachée n&apos;existe sur le site. Tous les liens commerciaux sont identifiés.</p>
 
         <LegalH2 id="contact">Contact</LegalH2>
-        <p>Pour toute question relative au present site, contacte la redaction via le <Link href="/contact" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">formulaire de contact</Link> ou a l&apos;adresse contact@leprotocoledesseptjours.com.</p>
+        <p>Pour toute question relative au présent site, contacte la rédaction via le <Link href="/contact" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">formulaire de contact</Link> ou à l&apos;adresse contact@leprotocoledesseptjours.com.</p>
       </div>
     </div>
   );

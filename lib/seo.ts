@@ -30,8 +30,8 @@ type BuildMetaInput = {
 
 export function buildMetadata(input: BuildMetaInput = {}): Metadata {
   const title = input.title
-    ? `${input.title} — ${SITE.name}`
-    : `Le Protocole · Journal — Rupture, no contact, reconquête`;
+    ? `${input.title} · ${SITE.name}`
+    : `Le Protocole · Journal : rupture, no contact, reconquête`;
   const description = input.description ?? SITE.description;
   const url = `${SITE.url}${input.path ?? ''}`;
   const ogImage = input.ogImage ?? `${SITE.url}${SITE.defaultOgImage}`;

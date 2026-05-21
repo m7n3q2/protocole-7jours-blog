@@ -16,7 +16,7 @@ export default function TopBanner() {
       <div className="container-wide flex h-9 items-center justify-between gap-4">
         <p className="hidden sm:flex items-center gap-2">
           <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent-400 animate-pulse-soft" aria-hidden="true" />
-          <span className="font-medium">Rupture recente ? Les premiers jours sont decisifs.</span>
+          <span className="font-medium">Rupture récente ? Les premiers jours sont décisifs.</span>
           <span className="text-cream-300">·</span>
           <span className="text-cream-300">{total} articles publiés</span>
         </p>

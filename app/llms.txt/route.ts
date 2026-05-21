@@ -20,7 +20,7 @@ export async function GET() {
     '',
     `> ${SITE.description}`,
     '',
-    'Journal independant sur la rupture amoureuse, le no contact, la reconquete et la reconstruction apres une separation. Articles bases sur la psychologie de l\'attachement. Contenu educatif, ne remplace pas un suivi professionnel.',
+    'Journal indépendant sur la rupture amoureuse, le no contact, la reconquête et la reconstruction après une séparation. Articles basés sur la psychologie de l\'attachement. Contenu éducatif, ne remplace pas un suivi professionnel.',
     '',
     '## Sujets couverts',
     '',
@@ -39,9 +39,9 @@ export async function GET() {
 
   lines.push('## Pages principales');
   lines.push('');
-  lines.push(`- [A propos](${SITE.url}/a-propos): qui edite Le Protocole Journal`);
+  lines.push(`- [À propos](${SITE.url}/a-propos): qui édite Le Protocole Journal`);
   lines.push(`- [Notre approche](${SITE.url}/methodologie): comment on travaille`);
-  lines.push(`- [Situations courantes](${SITE.url}/etudes-de-cas): situations types apres une rupture`);
+  lines.push(`- [Situations courantes](${SITE.url}/etudes-de-cas): situations types après une rupture`);
   lines.push(`- [Contact](${SITE.url}/contact): moyen de contact`);
   lines.push('');
   lines.push('## Optional');

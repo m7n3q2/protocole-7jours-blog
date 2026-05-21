@@ -17,7 +17,7 @@ export default function Header() {
           </span>
           <span className="mt-1 text-ink-500 font-sans text-[9px] sm:text-[10px] font-medium uppercase tracking-[0.14em] sm:tracking-[0.18em] whitespace-nowrap">
             <span className="hidden sm:inline">Journal · Rupture et reconquête</span>
-            <span className="sm:hidden">Journal independant</span>
+            <span className="sm:hidden">Journal indépendant</span>
           </span>
         </Link>
 

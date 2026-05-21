@@ -64,7 +64,7 @@ export async function POST(req: NextRequest) {
 
   const magnetSlug = (body.magnet || 'unknown').toString().slice(0, 60);
   const sitePrefix = process.env.SITE_PREFIX_TELEGRAM ?? '';
-  const siteTag = sitePrefix ? sitePrefix.replace(/[\[\]]/g, '').toLowerCase().trim() : 'decodeur';
+  const siteTag = sitePrefix ? sitePrefix.replace(/[\[\]]/g, '').toLowerCase().trim() : 'protocole7j';
 
   // Build lead payload minimal
   const lead = {

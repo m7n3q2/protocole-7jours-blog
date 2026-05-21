@@ -4,7 +4,7 @@ import { buildMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Notre approche',
-  description: "Comment Le Protocole · Journal aborde les sujets de la rupture : sources, ethique, ton, et limites du contenu editorial.",
+  description: "Comment Le Protocole · Journal aborde les sujets de la rupture : sources, éthique, ton, et limites du contenu éditorial.",
   path: '/methodologie',
 });
 
@@ -18,8 +18,8 @@ export default function MethodologyPage() {
 
       <div className="prose prose-lg mt-8">
         <p className="lead text-xl text-ink-700">
-          Rupture, no contact, reconquete : des sujets qui touchent a l&apos;intime, parfois au YMYL (Your Money Your Life).
-          Voici notre methode pour rester utile sans prendre de risques avec la sante emotionnelle de nos lecteurs.
+          Rupture, no contact, reconquête : des sujets qui touchent à l&apos;intime, parfois au YMYL (Your Money Your Life).
+          Voici notre méthode pour rester utile sans prendre de risques avec la santé émotionnelle de nos lecteurs.
         </p>
       </div>
 
@@ -56,43 +56,43 @@ export default function MethodologyPage() {
 
 const STEPS = [
   {
-    title: 'Contenu ancre dans la psychologie de l\'attachement',
-    desc: "Nos articles s'appuient sur les travaux de John Bowlby, Mary Ainsworth et leurs successeurs sur la theorie de l'attachement. On explique les comportements post-rupture (withdrawal, protest, resignation) avec ce cadre, pas avec des intuitions de comptoir.",
+    title: 'Contenu ancré dans la psychologie de l\'attachement',
+    desc: "Nos articles s'appuient sur les travaux de John Bowlby, Mary Ainsworth et leurs successeurs sur la théorie de l'attachement. On explique les comportements post-rupture (withdrawal, protest, resignation) avec ce cadre, pas avec des intuitions de comptoir.",
     bullets: [
-      "Styles d'attachement (anxieux, evitant, secure, desorganise) expliques clairement",
-      "Mecanismes de defense post-rupture decodes sans jargon",
-      "Liens vers les recherches de reference quand c'est pertinent",
-      "Distinction systematique entre correlation et causalite",
+      "Styles d'attachement (anxieux, évitant, sécure, désorganisé) expliqués clairement",
+      "Mécanismes de défense post-rupture décodés sans jargon",
+      "Liens vers les recherches de référence quand c'est pertinent",
+      "Distinction systématique entre corrélation et causalité",
     ],
   },
   {
-    title: 'Ethique de contenu : aider sans manipuler',
-    desc: "La reconquete amoureuse est un sujet ou les conseils manipulateurs pullulent. Notre ligne editoriale est claire : on aide les lecteurs a comprendre ce qui se passe et a agir de facon coherente, jamais a manipuler ou a controler l'autre.",
+    title: 'Éthique de contenu : aider sans manipuler',
+    desc: "La reconquête amoureuse est un sujet où les conseils manipulateurs pullulent. Notre ligne éditoriale est claire : on aide les lecteurs à comprendre ce qui se passe et à agir de façon cohérente, jamais à manipuler ou à contrôler l'autre.",
     bullets: [
       "Pas de 'techniques' de manipulation psychologique (negging, jealousy game, etc.)",
       "Distinction entre communication saine et jeux de pouvoir",
-      "On dit quand recuperer son ex n'est pas une bonne idee",
+      "On dit quand récupérer son ex n'est pas une bonne idée",
       "Respect de l'autonomie des deux personnes dans la relation",
     ],
   },
   {
-    title: 'Caveat sante mentale systematique',
-    desc: "La rupture amoureuse peut declencher des episodes depressifs, des crises d'angoisse, voire des pensees suicidaires. Ce contenu est educatif : il ne remplace pas un suivi psychologique ou psychiatrique.",
+    title: 'Caveat santé mentale systématique',
+    desc: "La rupture amoureuse peut déclencher des épisodes dépressifs, des crises d'angoisse, voire des pensées suicidaires. Ce contenu est éducatif : il ne remplace pas un suivi psychologique ou psychiatrique.",
     bullets: [
-      "Caveats clairs sur les limites du contenu editorial",
+      "Caveats clairs sur les limites du contenu éditorial",
       "Renvoi vers des ressources professionnelles quand le sujet le justifie",
-      "Pas de diagnostic, pas de prescription therapeutique",
+      "Pas de diagnostic, pas de prescription thérapeutique",
       "Signalement des situations d'urgence (crisis line, etc.)",
     ],
   },
   {
-    title: 'Transparence sur le produit associe',
-    desc: "Ce journal est associe au Protocole des 7 Jours, un programme payant. Cette relation est transparente : les liens vers le produit sont identifies, le contenu editorial reste independant.",
+    title: 'Transparence sur le produit associé',
+    desc: "Ce journal est associé au Protocole des 7 Jours, un programme payant. Cette relation est transparente : les liens vers le produit sont identifiés, le contenu éditorial reste indépendant.",
     bullets: [
-      "Liens vers le produit identifiables et toujours marques",
-      "Pas de contenu deguise en editorial pour pousser a l'achat",
-      "Les articles du journal restent utiles independamment du produit",
-      "Pas de systeme de conversion agressif (pas de countdown timer, pas de fausse urgence)",
+      "Liens vers le produit identifiables et toujours marqués",
+      "Pas de contenu déguisé en éditorial pour pousser à l'achat",
+      "Les articles du journal restent utiles indépendamment du produit",
+      "Pas de système de conversion agressif (pas de countdown timer, pas de fausse urgence)",
     ],
   },
 ];

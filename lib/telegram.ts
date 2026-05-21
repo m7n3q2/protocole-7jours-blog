@@ -95,7 +95,7 @@ export async function sendBlockerAlert(opts: {
   const emojiCount = parseInt(process.env.ALERT_EMOJI_COUNT ?? '5', 10);
   const emojis = '🚨'.repeat(emojiCount);
 
-  const siteName = process.env.NEXT_PUBLIC_SITE_NAME ?? 'Le Décodeur Marketing';
+  const siteName = process.env.NEXT_PUBLIC_SITE_NAME ?? 'Le Protocole · Journal';
   const siteEmoji = process.env.SITE_PREFIX_EMOJI ?? '📰';
   const siteUpper = siteName.toUpperCase();
   const msg = `${siteEmoji} <b>${escapeHtml(siteUpper)}</b> · ${emojis} <b>BLOCAGE</b> ${emojis}
@@ -127,7 +127,7 @@ export async function sendLeadNotification(lead: {
   projet: string;
   source?: string;
 }): Promise<{ ok: boolean }> {
-  const siteName = process.env.NEXT_PUBLIC_SITE_NAME ?? 'Le Décodeur Marketing';
+  const siteName = process.env.NEXT_PUBLIC_SITE_NAME ?? 'Le Protocole · Journal';
   const siteEmoji = process.env.SITE_PREFIX_EMOJI ?? '📰';
   const siteUpper = siteName.toUpperCase();
   const msg = `${siteEmoji} <b>${escapeHtml(siteUpper)}</b> · 🎯 <b>Nouveau lead</b>
