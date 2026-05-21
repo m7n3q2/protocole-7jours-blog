@@ -1086,7 +1086,7 @@ section.section { padding: 4rem 0; }
   position: relative;
 }
 .mdx-img-wrap::before {
-  content: "// illustration";
+  content: "";
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
