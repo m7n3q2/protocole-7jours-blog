@@ -1,0 +1,6 @@
+Ce fichier est un placeholder pour /public/. Les vrais fichiers de validation seront generes par le scheduled task setup_search_console au premier run :
+- google[token].html (Search Console)
+- BingSiteAuth.xml (Bing Webmaster Tools)
+- {INDEXNOW_KEY}.txt (IndexNow API)
+
+Le sitemap.xml et robots.txt sont generes dynamiquement par Next.js (cf. app/sitemap.ts, app/robots.ts).

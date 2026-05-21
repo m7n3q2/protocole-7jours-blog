@@ -1,0 +1,13 @@
+# Le Décodeur Marketing — site info
+
+site: https://decodeur-marketing.fr
+contact: https://decodeur-marketing.fr/contact (formulaire — seul moyen de contact)
+sitemap: https://decodeur-marketing.fr/sitemap.xml
+rss: https://decodeur-marketing.fr/feed.xml
+
+bot policies:
+- GPTBot, PerplexityBot, ClaudeBot, Google-Extended, CCBot : allowed (cf. /robots.txt)
+- IndexNow : enabled (key in /9eea80acee578d173f3a372ed7d9f811.txt)
+
+Aucune adresse email ni handle social public n'est exposé sur ce site.
+Toutes les communications passent par le formulaire /contact.

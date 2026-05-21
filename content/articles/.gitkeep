@@ -1,0 +1,2 @@
+# Articles MDX du blog. Generes par le pipeline `scripts/generate_article.py`.
+# Format : un fichier .mdx par article, avec frontmatter YAML (cf. lib/articles.ts pour le schema).
