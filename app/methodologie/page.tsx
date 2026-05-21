@@ -12,7 +12,7 @@ export default function MethodologyPage() {
   return (
     <div className="container-prose pt-20 md:pt-24 pb-16">
       <p className="label-silo">Notre approche</p>
-      <h1 className="mt-4 font-sans text-5xl font-bold text-ink-950 leading-tight">
+      <h1 className="mt-4 font-serif text-5xl font-bold text-[#1A1A2E] leading-tight">
         Comment on travaille
       </h1>
 
@@ -28,7 +28,7 @@ export default function MethodologyPage() {
           <li key={i} className="rounded-2xl border border-ink-100 bg-white p-8">
             <div className="flex items-baseline gap-4">
               <span className="font-sans text-4xl font-bold text-accent-500">{i + 1}</span>
-              <h2 className="font-sans text-2xl font-bold text-ink-950">{step.title}</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#1A1A2E]">{step.title}</h2>
             </div>
             <p className="mt-4 text-ink-700 leading-relaxed">{step.desc}</p>
             {step.bullets && (
@@ -40,15 +40,13 @@ export default function MethodologyPage() {
         ))}
       </ol>
 
-      <div className="mt-16 rounded-2xl bg-ink-950 text-white p-10 text-center">
-        <h2 className="font-sans text-2xl font-bold">Tu traverses une rupture en ce moment ?</h2>
-        <p className="mt-3 text-ink-300">Les articles du journal sont gratuits. Le programme complet est disponible sur le site principal.</p>
-        <div className="mt-6 flex flex-wrap gap-4 justify-center">
-          <Link href="/blog" className="btn-primary inline-flex">Lire les articles</Link>
-          <a href="https://leprotocoledesseptjours.com" target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex">
-            Le Protocole des 7 Jours
+      <div className="mt-16 text-center">
+        <p className="text-sm text-ink-500 leading-relaxed">
+          Programme complet :{' '}
+          <a href="https://leprotocoledesseptjours.com" target="_blank" rel="noopener noreferrer" className="text-accent-700 underline underline-offset-2 hover:text-accent-800 transition">
+            leprotocoledesseptjours.com
           </a>
-        </div>
+        </p>
       </div>
     </div>
   );

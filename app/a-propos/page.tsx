@@ -19,7 +19,7 @@ export default function AboutPage() {
   return (
     <div className="container-prose pt-20 md:pt-24 pb-16 md:pb-20">
       <p className="label-silo">À propos</p>
-      <h1 className="mt-4 font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-ink-950 leading-[1.02] tracking-[-0.025em] max-w-[18ch]">
+      <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A1A2E] leading-[1.02] tracking-[-0.025em] max-w-[18ch]">
         Comprendre, tenir,{' '}
         <span className="italic font-normal text-accent-700">avancer.</span>
       </h1>
@@ -30,7 +30,7 @@ export default function AboutPage() {
           et la reconquête. Pour les moments où on ne sait plus quoi faire, quoi penser, quoi ressentir.
         </p>
 
-        <h2 className="mt-12 font-sans text-2xl md:text-[1.625rem] font-bold text-ink-950 tracking-tight flex items-center gap-2.5">
+        <h2 className="mt-12 font-serif text-2xl md:text-[1.625rem] font-bold text-[#1A1A2E] tracking-tight flex items-center gap-2.5">
           <span aria-hidden="true" className="inline-block w-5 h-0.5 bg-accent-500 flex-shrink-0" />
           Pourquoi ce journal
         </h2>
@@ -45,7 +45,7 @@ export default function AboutPage() {
           et ceux qui veulent comprendre comment récupérer leur ex de façon saine.
         </p>
 
-        <h2 className="mt-12 font-sans text-2xl md:text-[1.625rem] font-bold text-ink-950 tracking-tight flex items-center gap-2.5">
+        <h2 className="mt-12 font-serif text-2xl md:text-[1.625rem] font-bold text-[#1A1A2E] tracking-tight flex items-center gap-2.5">
           <span aria-hidden="true" className="inline-block w-5 h-0.5 bg-accent-500 flex-shrink-0" />
           Qui écrit
         </h2>
@@ -68,7 +68,7 @@ export default function AboutPage() {
           ))}
         </div>
 
-        <h2 className="mt-12 font-sans text-2xl md:text-[1.625rem] font-bold text-ink-950 tracking-tight flex items-center gap-2.5">
+        <h2 className="mt-12 font-serif text-2xl md:text-[1.625rem] font-bold text-[#1A1A2E] tracking-tight flex items-center gap-2.5">
           <span aria-hidden="true" className="inline-block w-5 h-0.5 bg-accent-500 flex-shrink-0" />
           Ce qu&apos;on ne fait pas
         </h2>
@@ -76,10 +76,10 @@ export default function AboutPage() {
           <li>Pas de manipulation ou de techniques de contr&ocirc;le. Notre approche est éthique : comprendre, pas manipuler.</li>
           <li>Pas de promesses que ton ex reviendra. On ne peut pas prédire l&apos;avenir d&apos;une relation.</li>
           <li>Pas de contenu qui remplace un suivi psychologique. Si tu souffres intensément, consulte un professionnel de santé mentale.</li>
-          <li>Pas d&apos;affiliation cachee. Le seul lien commercial est celui vers le Protocole des 7 Jours, indique clairement.</li>
+          <li>Pas d&apos;affiliation cachée. Le seul lien commercial est celui vers le Protocole des 7 Jours, indiqué clairement.</li>
         </ul>
 
-        <h2 className="mt-12 font-sans text-2xl md:text-[1.625rem] font-bold text-ink-950 tracking-tight flex items-center gap-2.5">
+        <h2 className="mt-12 font-serif text-2xl md:text-[1.625rem] font-bold text-[#1A1A2E] tracking-tight flex items-center gap-2.5">
           <span aria-hidden="true" className="inline-block w-5 h-0.5 bg-accent-500 flex-shrink-0" />
           Le Protocole des 7 Jours
         </h2>

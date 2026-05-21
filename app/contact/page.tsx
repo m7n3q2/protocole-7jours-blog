@@ -18,7 +18,7 @@ export default function ContactPage() {
   return (
     <div className="container-prose pt-20 md:pt-28 pb-16 md:pb-20">
       <p className="label-silo">Contact</p>
-      <h1 className="mt-4 font-sans text-4xl md:text-5xl font-bold text-ink-950 leading-[1.05] tracking-[-0.025em]">
+      <h1 className="mt-4 font-serif text-4xl md:text-5xl font-bold text-[#1A1A2E] leading-[1.05] tracking-[-0.025em]">
         Écrire à{' '}
         <span className="italic font-normal text-accent-700">la rédaction.</span>
       </h1>

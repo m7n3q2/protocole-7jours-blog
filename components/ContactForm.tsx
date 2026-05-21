@@ -46,15 +46,15 @@ export default function ContactForm() {
       if (!res.ok) {
         setErrorMsg(
           data.error === 'rate_limited'
-            ? 'Trop de tentatives, reessaie dans une heure.'
-            : 'Une erreur est survenue, reessaie ou contacte-nous directement.',
+            ? 'Trop de tentatives, réessaie dans une heure.'
+            : 'Une erreur est survenue, réessaie ou contacte-nous directement.',
         );
         setState('error');
         return;
       }
       setState('ok');
     } catch {
-      setErrorMsg('Connexion impossible, reessaie dans quelques secondes.');
+      setErrorMsg('Connexion impossible, réessaie dans quelques secondes.');
       setState('error');
     }
   }
@@ -71,9 +71,9 @@ export default function ContactForm() {
             <path d="M5 12l5 5 9-11" />
           </svg>
         </div>
-        <p className="relative text-2xl font-sans font-bold text-ink-950">Message bien recu.</p>
+        <p className="relative text-2xl font-sans font-bold text-ink-950">Message bien reçu.</p>
         <p className="relative mt-3 text-ink-700 max-w-md mx-auto leading-relaxed">
-          On revient vers toi sous 48h ouvrees. Pense a verifier tes spams au cas ou notre email atterrit la-bas.
+          On revient vers toi sous 48h ouvrées. Pense à vérifier tes spams au cas où notre email atterrit là-bas.
         </p>
       </div>
     );
@@ -100,7 +100,7 @@ export default function ContactForm() {
             rows={5}
             minLength={30}
             maxLength={5000}
-            placeholder="Ta question, ton retour d'experience, ce que tu voudrais lire sur ce blog."
+            placeholder="Ta question, ton retour d'expérience, ce que tu voudrais lire sur ce blog."
             className="w-full rounded-lg border border-ink-200 bg-white px-4 py-3 text-ink-900 focus:border-accent-500 focus:ring-2 focus:ring-accent-100 focus:outline-none transition resize-y"
           />
         </div>
@@ -133,10 +133,10 @@ export default function ContactForm() {
         </button>
 
         <p className="text-xs text-ink-500 leading-relaxed">
-          En envoyant ce formulaire, tu acceptes que tes donnees soient utilisees pour te recontacter.
-          Aucune diffusion a un tiers, jamais.{' '}
+          En envoyant ce formulaire, tu acceptes que tes données soient utilisées pour te recontacter.
+          Aucune diffusion à un tiers, jamais.{' '}
           <a href="/politique-confidentialite" className="underline underline-offset-2 hover:text-ink-700">
-            Voir notre politique de confidentialite.
+            Voir notre politique de confidentialité.
           </a>
         </p>
       </form>

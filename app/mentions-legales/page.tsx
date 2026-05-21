@@ -23,7 +23,7 @@ export default function LegalNoticePage() {
       </nav>
 
       <p className="label-silo">Légal</p>
-      <h1 className="mt-3.5 font-sans text-4xl md:text-5xl font-bold text-ink-950 leading-[1.02] tracking-[-0.025em]">
+      <h1 className="mt-3.5 font-serif text-4xl md:text-5xl font-bold text-[#1A1A2E] leading-[1.02] tracking-[-0.025em]">
         Mentions <span className="italic font-normal text-accent-700">légales.</span>
       </h1>
       <p className="mt-3.5 font-mono text-xs uppercase tracking-[0.12em] text-ink-500">Mise à jour · 1er janvier 2026</p>
@@ -43,8 +43,8 @@ export default function LegalNoticePage() {
       <div className="mt-10 max-w-[72ch] text-lg text-ink-700 leading-relaxed space-y-4">
         <LegalH2 id="editeur">Éditeur du site</LegalH2>
         <p>Le site <strong className="text-ink-900">blog.leprotocoledesseptjours.com</strong> est édité par une entité éditoriale indépendante. Conformément à l&apos;article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l&apos;économie numérique, le site est publié de manière professionnelle.</p>
-        <p>Directeur de la publication : la redaction.</p>
-        <p>Le site n&apos;est rattache a aucune agence, aucun editeur tiers ni partenariat commercial obligatoire.</p>
+        <p>Directeur de la publication : la rédaction.</p>
+        <p>Le site n&apos;est rattaché à aucune agence, aucun éditeur tiers ni partenariat commercial obligatoire.</p>
         <p>Pour nous contacter : <Link href="/contact" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">formulaire de contact</Link> ou contact@leprotocoledesseptjours.com.</p>
 
         <LegalH2 id="hebergement">Hébergement</LegalH2>
@@ -72,7 +72,7 @@ export default function LegalNoticePage() {
 
 function LegalH2({ id, children }: { id: string; children: React.ReactNode }) {
   return (
-    <h2 id={id} className="!mt-12 font-sans text-2xl font-bold text-ink-950 tracking-tight flex items-center gap-2.5 scroll-mt-24">
+    <h2 id={id} className="!mt-12 font-serif text-2xl font-bold text-[#1A1A2E] tracking-tight flex items-center gap-2.5 scroll-mt-24">
       <span aria-hidden="true" className="inline-block w-5 h-0.5 bg-accent-500 flex-shrink-0" />
       {children}
     </h2>

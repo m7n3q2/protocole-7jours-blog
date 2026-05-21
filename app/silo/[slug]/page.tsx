@@ -48,7 +48,7 @@ export default async function SiloPage({ params }: { params: Promise<{ slug: str
 
       <div className="max-w-3xl">
         <p className="label-silo">Sujet · {String(siloIndex + 1).padStart(2, '0')} / {String(SILOS.length).padStart(2, '0')}</p>
-        <h1 className="mt-4 font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-ink-950 leading-[1.02] tracking-[-0.025em]">
+        <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A1A2E] leading-[1.02] tracking-[-0.025em]">
           {silo.name.split(' ').slice(0, -1).join(' ')}
           {silo.name.includes(' ') && <br />}
           <span className="italic font-normal text-accent-700">{silo.name.split(' ').slice(-1)[0]}.</span>
@@ -68,7 +68,7 @@ export default async function SiloPage({ params }: { params: Promise<{ slug: str
           >
             <span aria-hidden="true" className="absolute -right-10 -top-10 w-56 h-56 rounded-full border border-accent-500/18" />
             <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-accent-700 mb-2">Le guide complet</p>
-            <h2 className="font-sans text-2xl md:text-3xl font-bold text-ink-950 leading-tight tracking-tight">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#1A1A2E] leading-tight tracking-tight">
               {hub.frontmatter.title}
             </h2>
             <p className="mt-3 text-ink-700 leading-relaxed max-w-2xl">{hub.frontmatter.description}</p>
@@ -83,7 +83,7 @@ export default async function SiloPage({ params }: { params: Promise<{ slug: str
       {spokes.length > 0 && (
         <section className="mt-16">
           <div className="flex flex-wrap items-end justify-between gap-4 mb-8">
-            <h2 className="font-sans text-3xl font-bold text-ink-950 tracking-tight">Tous les articles {silo.name}</h2>
+            <h2 className="font-serif text-3xl font-bold text-[#1A1A2E] tracking-tight">Tous les articles {silo.name}</h2>
             <span className="font-mono text-xs uppercase tracking-[0.12em] text-ink-500">{spokes.length} articles</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -104,7 +104,7 @@ export default async function SiloPage({ params }: { params: Promise<{ slug: str
             />
                       )}
                     </div>
-                    <h3 className="mt-4 font-sans text-xl font-bold text-ink-950 group-hover:text-accent-700 leading-tight tracking-tight transition-colors">
+                    <h3 className="mt-4 font-serif text-xl font-bold text-[#1A1A2E] group-hover:text-accent-700 leading-tight tracking-tight transition-colors">
                       {a.frontmatter.title}
                     </h3>
                     <p className="mt-2 text-sm text-ink-600 leading-relaxed line-clamp-2">
@@ -123,8 +123,8 @@ export default async function SiloPage({ params }: { params: Promise<{ slug: str
 
       {articles.length === 0 && (
         <div className="mt-16 rounded-xl border border-ink-100 bg-cream-100 p-12 text-center">
-          <p className="font-sans text-2xl text-ink-950">Premiers articles a venir</p>
-          <p className="mt-2 text-ink-600">La redaction prepare les articles de ce theme.</p>
+          <p className="font-serif text-2xl text-[#1A1A2E]">Premiers articles à venir</p>
+          <p className="mt-2 text-ink-600">La rédaction prépare les articles de ce thème.</p>
         </div>
       )}
 
