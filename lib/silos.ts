@@ -84,7 +84,7 @@ export const SILOS: Silo[] = [
   },
   {
     id: 'reconquete-amoureuse',
-    name: 'Reconquete amoureuse',
+    name: 'Reconquête amoureuse',
     description:
       'Comment récupérer son ex de façon saine : les étapes qui fonctionnent, les erreurs à éviter, et comment reprendre contact au bon moment.',
     share: 0.17,
