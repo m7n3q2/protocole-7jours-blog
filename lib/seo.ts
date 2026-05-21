@@ -44,6 +44,7 @@ export function buildMetadata(input: BuildMetaInput = {}): Metadata {
     robots: input.noIndex
       ? { index: false, follow: false }
       : { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 } },
+    verification: { other: { 'msvalidate.01': '28CA4DDB43E9BDF654795840C8353440' } },
     openGraph: {
       type: input.type ?? 'website',
       locale: SITE.locale,
