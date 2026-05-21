@@ -1,48 +1,37 @@
 import Link from 'next/link';
-import { SITE } from '@/lib/seo';
+import Logo from '@/components/Logo';
 import { SILOS } from '@/lib/silos';
 
 /**
- * Le Protocole · Journal — Footer
- * Fond ink-950 sombre, point accent rouge, maillage silos + legales.
- * Maillage discret vers le produit leprotocoledesseptjours.com.
+ * Le Protocole des 7 Jours — Footer.
+ * Fond navy de marque, logo officiel, maillage interne (SEO) + légales,
+ * un seul lien discret vers le produit. Aucune zone de conversion.
  */
-
 export default function Footer() {
   return (
-    <footer className="bg-ink-950 text-ink-200 relative overflow-hidden site-footer">
-      <span
-        aria-hidden="true"
-        className="absolute -right-44 -bottom-32 w-[520px] h-[520px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(196,30,58,0.08), rgba(196,30,58,0) 65%)' }}
-      />
-      <div className="container-wide pt-28 pb-12 md:pt-32 md:pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 relative">
+    <footer className="bg-[#1A1A2E] text-cream-200/80 mt-20">
+      <div className="container-wide pt-16 pb-12 md:pt-20 md:pb-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12">
         <div className="md:col-span-2">
-          <Link href="/" className="flex flex-col items-start leading-none group">
-            <span className="font-sans text-2xl font-bold text-white tracking-tight">
-              <span>le protocole</span><span className="text-accent-400 transition-colors group-hover:text-accent-300 ml-0.5">·</span>
-            </span>
-            <span className="mt-1.5 text-ink-400 font-sans text-[10px] font-medium uppercase tracking-[0.2em]">
-              Journal · Rupture et reconquête
-            </span>
+          <Link href="/" aria-label="Accueil — Le Protocole des 7 Jours" className="inline-block">
+            <Logo dark />
           </Link>
-          <p className="mt-4 text-sm leading-relaxed max-w-md text-ink-400">
-            Journal indépendant sur la traversée de la rupture, le no contact et la reconquête amoureuse.
-            Contenu éducatif : ne remplace pas un suivi psychologique ou médical.
+          <p className="mt-6 font-sans text-sm leading-relaxed max-w-md text-cream-200/60">
+            Le journal de la reconstruction après une rupture : rupture, no contact, reconquête et
+            psychologie de l&apos;attachement. Contenu éducatif, ne remplace pas un suivi professionnel.
           </p>
-          <p className="mt-4 text-sm">
+          <p className="mt-5 font-sans text-sm">
             <a
               href="https://leprotocoledesseptjours.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent-400 hover:text-accent-300 transition-colors underline underline-offset-2"
             >
-              Le Protocole des 7 Jours (programme complet)
+              Le Protocole des 7 Jours
             </a>
           </p>
         </div>
 
-        <FooterCol title="Sujets">
+        <FooterCol title="Thèmes">
           {SILOS.map((s) => (
             <li key={s.id}>
               <FooterLink href={`/silo/${s.id}`}>{s.name}</FooterLink>
@@ -50,33 +39,19 @@ export default function Footer() {
           ))}
         </FooterCol>
 
-        <div>
-          <FooterColTitle>Le journal</FooterColTitle>
-          <ul className="space-y-2 text-sm">
-            <li><FooterLink href="/a-propos">À propos</FooterLink></li>
-            <li><FooterLink href="/methodologie">Notre approche</FooterLink></li>
-            <li><FooterLink href="/contact">Contact</FooterLink></li>
-            <li><FooterLink href="/feed.xml">Flux RSS</FooterLink></li>
-          </ul>
-          <div className="mt-6">
-            <FooterColTitle>Legal</FooterColTitle>
-            <ul className="space-y-2 text-sm">
-              <li><FooterLink href="/mentions-legales" muted>Mentions légales</FooterLink></li>
-              <li><FooterLink href="/politique-confidentialite" muted>Confidentialité</FooterLink></li>
-              <li><FooterLink href="/cgu" muted>CGU</FooterLink></li>
-            </ul>
-          </div>
-        </div>
+        <FooterCol title="Le journal">
+          <li><FooterLink href="/blog">Tous les articles</FooterLink></li>
+          <li><FooterLink href="/a-propos">À propos</FooterLink></li>
+          <li><FooterLink href="/methodologie">Notre approche</FooterLink></li>
+          <li><FooterLink href="/mentions-legales" muted>Mentions légales</FooterLink></li>
+          <li><FooterLink href="/politique-confidentialite" muted>Confidentialité</FooterLink></li>
+        </FooterCol>
       </div>
 
-      <div className="border-t border-ink-800 relative">
-        <div className="container-wide py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 md:gap-3">
-          <p className="font-sans text-[10px] sm:text-[11px] uppercase tracking-wider text-ink-500 leading-relaxed">
-            &copy; {new Date().getFullYear()} LE PROTOCOLE · JOURNAL
-            <span className="hidden sm:inline"> · Contenu éducatif</span>
-          </p>
-          <p className="hidden md:block font-sans text-[11px] uppercase tracking-wider text-ink-500">
-            Indépendant · Éthique · Soutien après rupture
+      <div className="border-t border-white/10">
+        <div className="container-wide py-6 text-center">
+          <p className="font-sans text-[11px] uppercase tracking-[0.14em] text-cream-200/40">
+            &copy; {new Date().getFullYear()} Le Protocole des 7 Jours · Contenu éducatif
           </p>
         </div>
       </div>
@@ -84,19 +59,13 @@ export default function Footer() {
   );
 }
 
-function FooterColTitle({ children }: { children: React.ReactNode }) {
-  return (
-    <p className="font-sans text-[11px] uppercase tracking-[0.18em] text-ink-500 mb-3 font-semibold">
-      <span className="text-accent-500">//</span> {children}
-    </p>
-  );
-}
-
 function FooterCol({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <FooterColTitle>{title}</FooterColTitle>
-      <ul className="space-y-2 text-sm">{children}</ul>
+      <p className="font-sans text-[11px] uppercase tracking-[0.16em] text-cream-200/40 mb-4 font-semibold">
+        {title}
+      </p>
+      <ul className="space-y-2.5 font-sans text-sm">{children}</ul>
     </div>
   );
 }
@@ -113,12 +82,7 @@ function FooterLink({
   return (
     <Link
       href={href}
-      className={`
-        relative ${muted ? 'text-ink-400' : 'text-ink-200'} hover:text-white transition-colors
-        after:content-[''] after:absolute after:left-0 after:-bottom-0.5
-        after:h-px after:w-0 hover:after:w-full
-        after:bg-accent-500 after:transition-[width] after:duration-200
-      `}
+      className={`${muted ? 'text-cream-200/45' : 'text-cream-200/75'} hover:text-white transition-colors`}
     >
       {children}
     </Link>

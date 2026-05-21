@@ -79,10 +79,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <article className="container-prose pt-20 md:pt-24 pb-16 md:pb-20">
         <header>
           <p className="label-silo">{silo?.name ?? article.frontmatter.silo}</p>
-          <h1 className="mt-4 font-sans text-4xl md:text-5xl font-bold text-ink-950 leading-[1.08] tracking-[-0.025em] max-w-[22ch]">
+          <h1 className="mt-4 font-serif text-4xl md:text-5xl font-bold text-[#1A1A2E] leading-[1.12] tracking-[-0.01em] max-w-[24ch]">
             {article.frontmatter.title}
           </h1>
-          <p className="mt-5 font-sans italic text-xl md:text-2xl text-ink-700 leading-snug max-w-[38ch]">
+          <p className="mt-5 font-sans text-lg md:text-xl text-ink-600 leading-relaxed max-w-[46ch]">
             {article.frontmatter.description}
           </p>
 
@@ -131,7 +131,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
         {article.frontmatter.faq && article.frontmatter.faq.length > 0 && (
           <section className="mt-16 border-t border-ink-100 pt-12">
-            <h2 className="font-sans text-3xl font-bold text-ink-950 mb-6 tracking-tight">Questions fréquentes</h2>
+            <h2 className="font-serif text-3xl font-bold text-[#1A1A2E] mb-6">Questions fréquentes</h2>
             <div className="space-y-2.5">
               {article.frontmatter.faq.map((q, i) => (
                 <details key={i} className="group rounded-lg border border-ink-100 hover:border-ink-200 bg-white p-5 transition-colors">
@@ -146,38 +146,22 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </section>
         )}
 
-        <section className="article-booking-cta">
-          <span aria-hidden="true" className="article-booking-cta__glow" />
-          <span aria-hidden="true" className="article-booking-cta__grid" />
-          <div className="article-booking-cta__inner">
-            <p className="article-booking-cta__eyebrow">
-              <span className="article-booking-cta__eyebrow-mark">//</span> Pour aller plus loin
-            </p>
-            <h3 className="article-booking-cta__title">
-              Le Protocole des 7 Jours : <em>se stabiliser apres la rupture.</em>
-            </h3>
-            <p className="article-booking-cta__lede">
-              Un programme complet de 7 jours pour traverser la periode post-rupture sans te perdre.
-              Methode structuree, exercices concrets, comprendre ce qui se passe pour agir juste.
-            </p>
-            <ul className="article-booking-cta__list" aria-label="Ce que couvre le programme">
-              <li><span aria-hidden="true">01</span> Stabilisation emotionnelle les premiers jours</li>
-              <li><span aria-hidden="true">02</span> Comprendre les mecanismes de l&apos;attachement post-rupture</li>
-              <li><span aria-hidden="true">03</span> Reprendre le controle sans faire les erreurs classiques</li>
-            </ul>
-            <div className="article-booking-cta__actions">
-              <a href="https://leprotocoledesseptjours.com" target="_blank" rel="noopener noreferrer" className="article-booking-cta__btn">
-                Decouvrir le protocole
-                <span className="article-booking-cta__btn-arrow" aria-hidden="true">→</span>
-              </a>
-              <span className="article-booking-cta__meta">Programme a 37 euros · acces immediat · 7 jours de methode</span>
-            </div>
-          </div>
-        </section>
+        <p className="mt-16 border-t border-ink-100 pt-8 font-sans text-[15px] text-ink-500 leading-relaxed">
+          Pour aller plus loin :{' '}
+          <a
+            href="https://leprotocoledesseptjours.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent-600 hover:text-accent-700 underline underline-offset-2 font-medium"
+          >
+            Le Protocole des 7 Jours
+          </a>
+          .
+        </p>
 
         {related.length > 0 && (
           <section className="mt-20 border-t border-ink-100 pt-12">
-            <h2 className="font-sans text-2xl font-bold text-ink-950 mb-6 tracking-tight">À lire ensuite</h2>
+            <h2 className="font-serif text-2xl font-bold text-[#1A1A2E] mb-6">À lire ensuite</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {related.map((r) => (
                 <Link
@@ -186,7 +170,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   className="group rounded-lg border border-ink-100 bg-white p-5 hover:border-accent-300 hover:-translate-y-0.5 transition"
                 >
                   <p className="label-silo">{r.frontmatter.silo}</p>
-                  <p className="mt-2 font-sans text-lg font-bold text-ink-950 group-hover:text-accent-700 leading-tight transition-colors">
+                  <p className="mt-2 font-serif text-lg font-bold text-[#1A1A2E] group-hover:text-accent-600 leading-snug transition-colors">
                     {r.frontmatter.title}
                   </p>
                   <p className="mt-2 text-sm text-ink-600 line-clamp-2 leading-relaxed">{r.frontmatter.description}</p>

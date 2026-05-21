@@ -49,8 +49,9 @@
   --piege-bg: #fff3cd; --piege-fg: #856404;
 
   /* FONTS */
-  --font-serif: 'DM Sans', Georgia, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  --font-script: 'Caveat', 'Brush Script MT', cursive;
   --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 
   /* SHADOWS */
@@ -135,9 +136,10 @@ footer h4:not([class*="text-"]) { color: #fff; }
    (les couleurs vert vs noir suffisent à les différencier visuellement) */
 body:has(main > section.next-step-cta:last-child) .site-footer { margin-top: 0 !important; }
 p { margin: 0; }
-.font-serif { font-family: var(--font-serif); }
-.font-sans  { font-family: var(--font-sans); }
-.font-mono  { font-family: var(--font-mono); }
+.font-serif  { font-family: var(--font-serif); }
+.font-sans   { font-family: var(--font-sans); }
+.font-script { font-family: var(--font-script); }
+.font-mono   { font-family: var(--font-mono); }
 .italic { font-style: italic; }
 
 /* === LAYOUT === */

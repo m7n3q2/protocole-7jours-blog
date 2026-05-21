@@ -62,9 +62,10 @@ const config: Config = {
       },
 
       fontFamily: {
-        serif: ['DM Sans', 'Georgia', 'serif'],
-        sans: ['DM Sans', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        serif: ['var(--font-serif)', 'Georgia', 'serif'],
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        script: ['var(--font-script)', 'cursive'],
+        mono: ['var(--font-mono)', 'JetBrains Mono', 'monospace'],
       },
 
       // === NOUVEAUX TOKENS additifs ===
