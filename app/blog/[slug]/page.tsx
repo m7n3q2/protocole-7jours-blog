@@ -111,6 +111,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               className="object-cover"
               priority
               sizes="(max-width: 768px) 100vw, 800px"
+              unoptimized={article.frontmatter.hero?.endsWith('.svg')}
             />
           </div>
         )}

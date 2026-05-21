@@ -100,7 +100,8 @@ export default async function SiloPage({ params }: { params: Promise<{ slug: str
                           fill
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
                           sizes="(max-width: 768px) 100vw, 33vw"
-                        />
+              unoptimized={a.frontmatter.hero?.endsWith('.svg')}
+            />
                       )}
                     </div>
                     <h3 className="mt-4 font-sans text-xl font-bold text-ink-950 group-hover:text-accent-700 leading-tight tracking-tight transition-colors">

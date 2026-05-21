@@ -147,7 +147,8 @@ export default function HomePage() {
                             fill
                             className="object-cover transition-transform duration-500 group-hover:scale-105"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          />
+              unoptimized={a.frontmatter.hero?.endsWith('.svg')}
+            />
                         )}
                       </div>
                       <p className="mt-4 label-silo">{a.frontmatter.silo}</p>

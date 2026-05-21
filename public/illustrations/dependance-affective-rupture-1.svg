@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0a1d3a"/><stop offset="100%" stop-color="#1e40af"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="120" r="180" fill="#d97706" opacity="0.18"/>
+          <circle cx="1100" cy="180" r="90" fill="none" stroke="#d97706" stroke-width="2" opacity="0.4"/>
+          <rect x="80" y="500" width="220" height="3" fill="#d97706" opacity="0.7"/>
+  <text x="80" y="120" font-family="ui-monospace, monospace" font-size="20" font-weight="600" letter-spacing="4" fill="#d97706">// MAGAZINE FINANCE</text>
+  <text x="80" y="210" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#f0f4ff">Les signes spécifiques de</text>
+<text x="80" y="280" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#f0f4ff">la dépendance affective</text>
+<text x="80" y="350" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#f0f4ff">dans une relation</text>
+  <text x="80" y="560" font-family="ui-monospace, monospace" font-size="16" letter-spacing="2" fill="#f0f4ff" opacity="0.6">ILLUSTRATION · CHAPITRE 1</text>
+</svg>
