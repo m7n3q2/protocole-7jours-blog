@@ -9,8 +9,8 @@
           <rect width="1200" height="630" fill="url(#grid)"/>
           <rect x="60" y="80" width="4" height="470" fill="#e96a7f"/>
           <circle cx="1080" cy="500" r="50" fill="#e96a7f" opacity="0.5"/>
-  <text x="80" y="120" font-family="ui-monospace, monospace" font-size="20" font-weight="600" letter-spacing="4" fill="#e96a7f">// LE PROTOCOLE</text>
+  <text x="80" y="120" font-family="ui-monospace, monospace" font-size="20" font-weight="600" letter-spacing="4" fill="#e96a7f">LE PROTOCOLE</text>
   <text x="80" y="245" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">Technique 4 : reconfigurer</text>
 <text x="80" y="315" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">le temps libre structuré</text>
-  <text x="80" y="560" font-family="ui-monospace, monospace" font-size="16" letter-spacing="2" fill="#FAF9F7" opacity="0.6">ILLUSTRATION · CHAPITRE 2</text>
+  
 </svg>

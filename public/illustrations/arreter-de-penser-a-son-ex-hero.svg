@@ -4,7 +4,7 @@
   <circle cx="1080" cy="540" r="280" fill="#e96a7f" opacity="0.16"/>
           <circle cx="1080" cy="540" r="160" fill="none" stroke="#e96a7f" stroke-width="2" opacity="0.4"/>
           <rect x="100" y="100" width="3" height="80" fill="#e96a7f"/>
-  <text x="100" y="150" font-family="ui-monospace, monospace" font-size="18" font-weight="600" letter-spacing="4" fill="#e96a7f">// LE PROTOCOLE</text>
+  <text x="100" y="150" font-family="ui-monospace, monospace" font-size="18" font-weight="600" letter-spacing="4" fill="#e96a7f">LE PROTOCOLE</text>
   <text x="100" y="270" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">Comment arrêter de penser à</text>
 <text x="100" y="340" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">son ex : 8 techniques</text>
 <text x="100" y="410" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">concrètes</text>

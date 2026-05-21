@@ -4,7 +4,7 @@
   <path d="M 0 70 L 1200 30 L 1200 0 L 0 0 Z" fill="#e96a7f" opacity="0.22"/>
           <circle cx="1080" cy="550" r="90" fill="#e96a7f" opacity="0.30"/>
           <circle cx="120" cy="540" r="40" fill="#e96a7f" opacity="0.55"/>
-  <text x="100" y="150" font-family="ui-monospace, monospace" font-size="18" font-weight="600" letter-spacing="4" fill="#e96a7f">// LE PROTOCOLE</text>
+  <text x="100" y="150" font-family="ui-monospace, monospace" font-size="18" font-weight="600" letter-spacing="4" fill="#e96a7f">LE PROTOCOLE</text>
   <text x="100" y="305" font-family="Georgia, serif" font-weight="bold" font-size="64" fill="#FAF9F7">À quoi pense ton ex pendant</text>
 <text x="100" y="383" font-family="Georgia, serif" font-weight="bold" font-size="64" fill="#FAF9F7">ton silence radio</text>
 </svg>
