@@ -89,7 +89,7 @@ export default function PrivacyPage() {
         <p>Les seuls cookies déposés sont strictement techniques : état du formulaire de contact (cooldown anti-spam). Pas de cookie publicitaire, pas de pixel de retargeting.</p>
 
         <LegalH2 id="contact">Contact DPO</LegalH2>
-        <p>Pour toute question relative au traitement de tes données : <Link href="/contact" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">formulaire de contact</Link>, mention RGPD en début de message, ou contact@leprotocoledesseptjours.com.</p>
+        <p>Pour toute question relative au traitement de tes données : <Link href="/contact" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">formulaire de contact</Link>, mention RGPD en début de message.</p>
         <p>Tu peux également saisir la CNIL : <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener noreferrer" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">cnil.fr/fr/plaintes</a>.</p>
       </div>
     </div>

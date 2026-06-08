@@ -45,7 +45,7 @@ export default function LegalNoticePage() {
         <p>Le site <strong className="text-ink-900">blog.leprotocoledesseptjours.com</strong> est édité par une entité éditoriale indépendante. Conformément à l&apos;article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l&apos;économie numérique, le site est publié de manière professionnelle.</p>
         <p>Directeur de la publication : la rédaction.</p>
         <p>Le site n&apos;est rattaché à aucune agence, aucun éditeur tiers ni partenariat commercial obligatoire.</p>
-        <p>Pour nous contacter : <Link href="/contact" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">formulaire de contact</Link> ou contact@leprotocoledesseptjours.com.</p>
+        <p>Pour nous contacter : <Link href="/contact" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">formulaire de contact</Link>.</p>
 
         <LegalH2 id="hebergement">Hébergement</LegalH2>
         <p>Le site est hébergé sur Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis. Infrastructure CDN Europe.</p>
@@ -64,7 +64,7 @@ export default function LegalNoticePage() {
         <p>Aucune affiliation cachée n&apos;existe sur le site. Tous les liens commerciaux sont identifiés.</p>
 
         <LegalH2 id="contact">Contact</LegalH2>
-        <p>Pour toute question relative au présent site, contacte la rédaction via le <Link href="/contact" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">formulaire de contact</Link> ou à l&apos;adresse contact@leprotocoledesseptjours.com.</p>
+        <p>Pour toute question relative au présent site, contacte la rédaction via le <Link href="/contact" className="text-accent-700 underline underline-offset-2 hover:text-accent-800">formulaire de contact</Link>.</p>
       </div>
     </div>
   );
