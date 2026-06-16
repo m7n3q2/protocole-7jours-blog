@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs><radialGradient id="bg" cx="20%" cy="30%" r="120%"><stop offset="0%" stop-color="#4a0b16"/><stop offset="100%" stop-color="#1A1A2E"/></radialGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e96a7f" stroke-width="0.5" opacity="0.15"/>
+            </pattern>
+          </defs>
+          <rect width="1200" height="630" fill="url(#grid)"/>
+          <rect x="60" y="80" width="4" height="470" fill="#e96a7f"/>
+          <circle cx="1080" cy="500" r="50" fill="#e96a7f" opacity="0.5"/>
+  <text x="80" y="120" font-family="ui-monospace, monospace" font-size="20" font-weight="600" letter-spacing="4" fill="#e96a7f">LE PROTOCOLE</text>
+  <text x="80" y="280" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">Le piège du faux contrôle</text>
+  
+</svg>
