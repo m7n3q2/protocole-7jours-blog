@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs><linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1A1A2E"/><stop offset="100%" stop-color="#4a0b16"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1080" cy="540" r="280" fill="#e96a7f" opacity="0.16"/>
+          <circle cx="1080" cy="540" r="160" fill="none" stroke="#e96a7f" stroke-width="2" opacity="0.4"/>
+          <rect x="100" y="100" width="3" height="80" fill="#e96a7f"/>
+  <text x="100" y="150" font-family="ui-monospace, monospace" font-size="18" font-weight="600" letter-spacing="4" fill="#e96a7f">LE PROTOCOLE</text>
+  <text x="100" y="243" font-family="Georgia, serif" font-weight="bold" font-size="52" fill="#FAF9F7">Psychologie de ton ex après</text>
+<text x="100" y="305" font-family="Georgia, serif" font-weight="bold" font-size="52" fill="#FAF9F7">la rupture : ce que ses</text>
+<text x="100" y="367" font-family="Georgia, serif" font-weight="bold" font-size="52" fill="#FAF9F7">silences, ses textos et ses</text>
+<text x="100" y="429" font-family="Georgia, serif" font-weight="bold" font-size="52" fill="#FAF9F7">gestes veulent dire</text>
+</svg>
