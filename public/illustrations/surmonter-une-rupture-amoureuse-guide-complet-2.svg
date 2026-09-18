@@ -10,7 +10,8 @@
           <rect x="60" y="80" width="4" height="470" fill="#e96a7f"/>
           <circle cx="1080" cy="500" r="50" fill="#e96a7f" opacity="0.5"/>
   <text x="80" y="120" font-family="ui-monospace, monospace" font-size="20" font-weight="600" letter-spacing="4" fill="#e96a7f">LE PROTOCOLE</text>
-  <text x="80" y="245" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">Ce que tu ne dois pas</text>
-<text x="80" y="315" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">faire seul</text>
+  <text x="80" y="210" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">Ce qui MARCHE vraiment : 5</text>
+<text x="80" y="280" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">choses concrètes à faire</text>
+<text x="80" y="350" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">cette semaine</text>
   
 </svg>
