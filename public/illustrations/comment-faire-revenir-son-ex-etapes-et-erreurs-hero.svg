@@ -5,7 +5,8 @@
           <circle cx="1080" cy="540" r="160" fill="none" stroke="#e96a7f" stroke-width="2" opacity="0.4"/>
           <rect x="100" y="100" width="3" height="80" fill="#e96a7f"/>
   <text x="100" y="150" font-family="ui-monospace, monospace" font-size="18" font-weight="600" letter-spacing="4" fill="#e96a7f">LE PROTOCOLE</text>
-  <text x="100" y="270" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">Comment faire revenir son</text>
-<text x="100" y="340" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">ex : les étapes qui marchent</text>
-<text x="100" y="410" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">et les pièges</text>
+  <text x="100" y="243" font-family="Georgia, serif" font-weight="bold" font-size="52" fill="#FAF9F7">Comment faire revenir son</text>
+<text x="100" y="305" font-family="Georgia, serif" font-weight="bold" font-size="52" fill="#FAF9F7">ex : les étapes qui</text>
+<text x="100" y="367" font-family="Georgia, serif" font-weight="bold" font-size="52" fill="#FAF9F7">fonctionnent et les pièges à</text>
+<text x="100" y="429" font-family="Georgia, serif" font-weight="bold" font-size="52" fill="#FAF9F7">éviter</text>
 </svg>
