@@ -5,7 +5,7 @@
           <circle cx="1080" cy="550" r="90" fill="#e96a7f" opacity="0.30"/>
           <circle cx="120" cy="540" r="40" fill="#e96a7f" opacity="0.55"/>
   <text x="100" y="150" font-family="ui-monospace, monospace" font-size="18" font-weight="600" letter-spacing="4" fill="#e96a7f">LE PROTOCOLE</text>
-  <text x="100" y="270" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">Rupture amoureuse : quoi</text>
-<text x="100" y="340" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">faire (et ne pas faire) dans</text>
-<text x="100" y="410" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">les 48 premières heures</text>
+  <text x="100" y="270" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">Rupture amoureuse : que</text>
+<text x="100" y="340" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">faire dans les 48 premières</text>
+<text x="100" y="410" font-family="Georgia, serif" font-weight="bold" font-size="58" fill="#FAF9F7">heures</text>
 </svg>
