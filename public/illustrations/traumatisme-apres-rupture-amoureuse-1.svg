@@ -5,7 +5,7 @@
           <circle cx="1100" cy="180" r="90" fill="none" stroke="#e96a7f" stroke-width="2" opacity="0.4"/>
           <rect x="80" y="500" width="220" height="3" fill="#e96a7f" opacity="0.7"/>
   <text x="80" y="120" font-family="ui-monospace, monospace" font-size="20" font-weight="600" letter-spacing="4" fill="#e96a7f">LE PROTOCOLE</text>
-  <text x="80" y="245" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">Pourquoi ton corps réagit</text>
-<text x="80" y="315" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">comme face à un danger</text>
+  <text x="80" y="245" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">Ce qui se passe dans ton</text>
+<text x="80" y="315" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#FAF9F7">cerveau et ton corps</text>
   
 </svg>
