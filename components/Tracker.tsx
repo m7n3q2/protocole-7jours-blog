@@ -147,11 +147,46 @@ export default function Tracker() {
       });
     };
     const onVisibility = () => { if (document.visibilityState === 'hidden') sendExit(); };
+    // 6. clics vers les offres et liens sortants (13/10/2026, pilote SEO)
+    //    offer_click    : page d'offre interne (contact, audit, coaching, méthode...) ou lien externe hors du
+    //                     corps de l'article (bandeau, en-tête, pied de page, bouton d'appel à l'action)
+    //    outbound_click : lien externe dans le corps de l'article (une source citée)
+    const onClick = (e: MouseEvent) => {
+      const cible = e.target as Element | null;
+      const a = cible && typeof cible.closest === 'function' ? cible.closest('a') : null;
+      if (!a) return;
+      let url: URL;
+      try {
+        url = new URL(a.getAttribute('href') || '', window.location.href);
+      } catch {
+        return;
+      }
+      if (!/^https?:$/.test(url.protocol)) return;
+      const ici = window.location.hostname.replace(/^www\./, '');
+      const externe = url.hostname.replace(/^www\./, '') !== ici;
+      const dansArticle = !!a.closest('article, .prose');
+      const pageOffre = /^\/(contact|audit|coaching|methode|offre|rendez-vous|rdv|lead|mise-en-relation|outils)/.test(url.pathname);
+      let kind = '';
+      if ((!externe && pageOffre) || (externe && !dansArticle)) kind = 'offer_click';
+      else if (externe) kind = 'outbound_click';
+      if (!kind) return;
+      send({
+        kind,
+        page,
+        session_id: sessionId.current,
+        ts: Date.now(),
+        target: url.href.slice(0, 200),
+        label: (a.textContent || '').trim().slice(0, 80),
+      });
+    };
+    document.addEventListener('click', onClick, true);
+
     window.addEventListener('pagehide', sendExit);
     document.addEventListener('visibilitychange', onVisibility);
 
     return () => {
       window.removeEventListener('scroll', onScroll);
+      document.removeEventListener('click', onClick, true);
       window.removeEventListener('pagehide', sendExit);
       document.removeEventListener('visibilitychange', onVisibility);
       if (heartbeatTimer.current) clearInterval(heartbeatTimer.current);

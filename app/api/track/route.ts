@@ -34,6 +34,8 @@ type Event = {
   utm_source?: string;
   utm_medium?: string;
   utm_campaign?: string;
+  target?: string;
+  label?: string;
 };
 
 function detectDevice(ua: string | null): 'mobile' | 'desktop' | 'tablet' {
@@ -60,6 +62,8 @@ export async function POST(req: NextRequest) {
       utm_source: data.utm_source ? String(data.utm_source).slice(0, 60) : undefined,
       utm_medium: data.utm_medium ? String(data.utm_medium).slice(0, 60) : undefined,
       utm_campaign: data.utm_campaign ? String(data.utm_campaign).slice(0, 60) : undefined,
+      target: data.target ? String(data.target).slice(0, 200) : undefined,
+      label: data.label ? String(data.label).slice(0, 80) : undefined,
       ua: req.headers.get('user-agent')?.slice(0, 200) ?? undefined,
       country: req.headers.get('x-vercel-ip-country') ?? undefined,
       device: detectDevice(req.headers.get('user-agent')),
@@ -67,6 +71,42 @@ export async function POST(req: NextRequest) {
 
     // Log structuré (récupérable via Vercel Logs API)
     console.log('[track]', JSON.stringify(event));
+
+    // PostHog (13/10/2026, pilote SEO) : projet existant de Corentin, événements préfixés blog_ et propriété
+    // « blog ». Clé publique dans la variable Vercel POSTHOG_KEY (jamais dans git). Pas de profil personne,
+    // pas de cookie : seulement les événements utiles (pas les battements ni le défilement).
+    const cle = process.env.POSTHOG_KEY;
+    const utiles = ['page_view', 'offer_click', 'outbound_click', 'geo_referer', 'lead_start', 'lead_submit', 'exit'];
+    if (cle && utiles.includes(event.kind) && !/bot|crawl|spider|headless|lighthouse|preview/i.test(event.ua ?? '')) {
+      const blog = req.nextUrl.hostname.replace(/^www\./, '');
+      await fetch('https://eu.i.posthog.com/capture/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          api_key: cle,
+          event: 'blog_' + event.kind,
+          distinct_id: event.session_id || 'anonyme',
+          timestamp: new Date(event.ts).toISOString(),
+          properties: {
+            blog,
+            page: event.page,
+            $current_url: 'https://' + req.nextUrl.hostname + event.page,
+            $process_person_profile: false,
+            source: event.source,
+            referrer: event.referrer,
+            target: event.target,
+            label: event.label,
+            duration: event.duration,
+            depth: event.depth,
+            device: event.device,
+            country: event.country,
+            utm_source: event.utm_source,
+            utm_medium: event.utm_medium,
+            utm_campaign: event.utm_campaign,
+          },
+        }),
+      }).catch(() => {});
+    }
   } catch {
     // Silencieux : ne JAMAIS bloquer l'expérience utilisateur pour de l'analytics
   }
