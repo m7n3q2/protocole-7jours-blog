@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="bg-[#1A1A2E] text-cream-200/80 mt-20">
       <div className="container-wide pt-16 pb-12 md:pt-20 md:pb-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12">
         <div className="md:col-span-2">
-          <Link href="/" aria-label="Accueil — Le Protocole des 7 Jours" className="inline-block">
+          <Link href="/" aria-label="Accueil, Le Protocole des 7 Jours" className="inline-block">
             <Logo dark />
           </Link>
           <p className="mt-6 font-sans text-sm leading-relaxed max-w-md text-cream-200/60">

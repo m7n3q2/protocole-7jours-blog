@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="border-b border-ink-100/70 bg-cream-50">
       <div className="container-wide py-4 sm:py-5 flex justify-center">
-        <Link href="/" aria-label="Accueil — Le Protocole des 7 Jours" className="inline-block">
+        <Link href="/" aria-label="Accueil, Le Protocole des 7 Jours" className="inline-block">
           <Logo />
         </Link>
       </div>

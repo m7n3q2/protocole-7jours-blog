@@ -22,7 +22,7 @@ export default function TopBanner() {
         </p>
         <p className="sm:hidden flex items-center gap-2">
           <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent-400 animate-pulse-soft" aria-hidden="true" />
-          <span>{total} articles · 1 par jour</span>
+          <span>{total} articles</span>
         </p>
         {last && (
           <Link
